@@ -15,11 +15,12 @@ def line(array)
         i += 1                  #interates to the next element;
       end # end the while loop;
 end # end of method;
-
+$ticketnumber = 0
 #take a number method ;
-def take_a_number(array,customer)
-  array.push(customer) # places customer at end of line
-  puts "Welcome, #{customer}.You are number #{array.length} in line." # length is just how people like to count
+def take_a_number(array)
+  $ticketnumber += 1 
+  array.push($ticketnumber) # places customer at end of line
+  puts "Welcome.You are ticket number #{$ticketnumber} in line." # length is just how people like to count
 end # end of take number method
 
 #now serving method
